@@ -1,0 +1,6 @@
+FROM registry.juhaolian.cn:5000/public/centos:latest
+
+MAINTAINER hisense_chaijianglong<chaijianglong@hisense.com>
+ADD open-falcon.tar.gz /
+EXPOSE 18433 6030
+RUN cd  /home/work/open-falcon/ && ./open-falcon start transfer && ./openfalcon start hbs
