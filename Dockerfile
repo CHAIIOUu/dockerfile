@@ -2,7 +2,7 @@ FROM docker.io/centos
 MAINTAINER iouu
 LABEL description="This is a iouu's test dockerfile!"
 
-RUN yum install -t httpd 
+RUN yum install -y httpd 
 WORKDIR /var/www/html
 
 RUN echo "hello" > index.html
