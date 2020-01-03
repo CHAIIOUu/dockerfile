@@ -1,2 +1,2 @@
 FROM docker.io/centos
-CMD ['echo "Hello"']
+CMD echo "hello"
